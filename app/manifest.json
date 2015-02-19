@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "JIRA Time Tracker",
+  "description": "JIRA Time Tracker",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "components/popup/popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://ajax.googleapis.com/"
+  ]
+}

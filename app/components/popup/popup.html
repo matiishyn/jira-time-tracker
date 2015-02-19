@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 100%;
+            min-width: 400px;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://bootswatch.com/superhero/bootstrap.min.css"/>
+    <!--<script src="../../bower_components/jquery/dist/jquery.min.js"></script>-->
+    <script src="popup.js"></script>
+</head>
+<body>
+<div class="container">
+    <h3 class="text-center">JIRA Time Tracker</h3>
+
+    <form action="#" id="startWorkingForm" class="form-horizontal">
+        <div class="input-group">
+            <input class="form-control" type="text" id="issueId" placeholder="task ID"/>
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit" id="startWorkingBtn">Start</button>
+            </span>
+        </div>
+    </form>
+
+    <hr/>
+
+    <h4>Current issue:</h4>
+    <div id="currentIssues" class="list-group">
+        <!--<div class="list-group-item">
+            <a href="#" >C</a><button class="btn btn-danger btn-xs pull-right">Stop</button>
+        </div>-->
+    </div>
+
+    <hr/>
+
+    <h4 class="pull-left">Issues:</h4>
+    <button id="clearAllIssues" class="btn btn-danger pull-right">Clear All</button>
+    <ul style="clear: both;" id="issues" class="list-group"></ul>
+
+</div>
+
+
+</body>
+</html>
+
